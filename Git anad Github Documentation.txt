@@ -1,0 +1,113 @@
+=Git anad Github
+
+VCS(VERSION CONTROL SYSTEM):
+
+IT ALLLOW US TO KEEP TRACK  OF OUR FILES(IMAGE,CODE ETC) IN OUR REPOSITORY AND ALSO YOU CAN GET THE REALTIME RESPONSE(EHAT CHANGES THEY Have made) OF ANY UNKNOWN USER
+
+Diffing File:
+
+It used to see the difference between two files
+we have to use DIFF command to get the picture
+
+1. diff -u file1 file2 -->This will used to find out the basic difference two file content
+
+2. wdiff filename -->this will highlight the changes made in a file
+
+Merging file:
+
+1.patch file2 > file --> This will used to merge two file content without taking consideration of redundancy here file2 has more content than file1
+
+VERSION CONTROLLING SYSTEM
+
+e.g 1.0.1
+
+1-->Major version-->when it occurs then there is possibilities or not the whole caricature or will be changed 
+
+0-->Minor version-->
+
+1-->Patch Version-->Usually for fixing bug
+
+continued do at yourself
+
+-----------------------END OF VCS---------------------------
+
+GIT:
+
+---> It is a distributed VCS and every contributor can interact without needing any co-ordinating sever ultimately it will help to make collaboration with developers
+
+git init -->for creating local directory
+commit -->Directory
+
+
+1.GIT DIRECTORY
+--->It acts as a database for tracking all the changes in git
+
+2.WORKING TREE
+--->Here ,we can edit the current version of the file
+
+3.STAGING AREA
+--->A file maintained by git that contains all of the information about what changes has been made for the next commit
+
+----------------------GIT CONFIGURATION----------------------
+
+We use 'git config' command to set user information
+
+-->for setting email for  github
+
+    git config --global user.email "codingf3ver@gmail.com"
+
+--->for setting username for GitHub
+
+   git config --global user.name " codingf3ver" 
+
+---> for checking configuration details
+   
+   git config ~l
+
+--->global is basically used to set each and every repository for setting username and email we can setup locally for particular repository
+
+------------------------END OF CONFIGURATION-----------------------
+
+FILE TRACKING
+
+1.Untracked file
+  --->An untracked file highlight in red  color
+  ---> It has no state
+2.Tracked file
+  --->A tracked file highlight in green color 
+  --->It has three states (modified , stage, commit)
+COMMANDs
+git status --->for checking the file Statius
+git add filename --->changes to tracked from untracked
+git commit -m "your msg"-->for commit message
+git add . --->all file changes to tracked status
+Git log --->This will give you all the changes made in your repository
+
+MASTER BRANCH
+
+When we initialise a git repository by default a branch has already created along with repository otherwise repo will not shown master branch unless first commit occurred 
+
+STAGING AREA
+
+-->If you forget to add commit msg then we can use the following command
+
+   git commit -a
+
+Task---VI editor 
+nano -m filename -->For using mouse in nano editor
+
+git log -p --->It will show current modification i.e (+) sign will be for the recent changes  (-) for recently deleted  
+
+------------end-------------------
+git log --stat --->it will show the changes of the file meaning how and where files are removed
+git show -->It will give you the information about recent commit that you made
+git add -p --> It will let you to perform various things like what changes you to perform
+git rm filename --> This will delete the file from your directory
+git mv exist_file desired_file -->It will rename your existing with your desired
+git log -number(1,2,3,4...) -->It will give you the specified committed tree
+git checkout --> It will effectively used to switch branches to default
+git reset --> reset the repo
+git commit --amend --> allows  us to modified the committed message
+git 
+
+
